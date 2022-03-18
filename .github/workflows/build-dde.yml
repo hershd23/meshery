@@ -39,7 +39,7 @@ jobs:
       - name: Dummy commands
         run: |
           pwd
-          ls
+          ls -al
 
 
       # Step to delete files
