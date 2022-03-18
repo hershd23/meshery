@@ -3,7 +3,7 @@ on:
   # TODO :- Figure out a policy to build and push extension image to DockerHub
   push:
     branches:
-      - 'master'
+      - 'dde'
     paths-ignore:
       - 'docs/**'
       - '.github/**'
