@@ -1,6 +1,6 @@
-# TODO :- Figure out a policy to build and push extension image to DockerHub
 name: Meshery Build and Push Docker Extension
 on:
+  # TODO :- Figure out a policy to build and push extension image to DockerHub
   workflow_dispatch:
     inputs:
       logLevel:
