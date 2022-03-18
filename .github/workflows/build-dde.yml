@@ -1,12 +1,17 @@
 name: Meshery Build and Push Docker Extension
 # TODO :- Figure out a policy to build and push extension image to DockerHub
 on:
-  push:
-    branches:
-      - 'dde'
-    paths-ignore:
-      - 'docs/**'
-      - '.github/**'
+  workflow_dispatch:
+      inputs:
+        logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning' 
+        type: choice
+        options:
+        - info
+        - warning
+        - debug 
 
 jobs:
   build:
