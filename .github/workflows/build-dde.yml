@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - 'dde'
-#     paths-ignore:
-#       - 'docs/**'
-#       - '.github/**'
+    paths-ignore:
+      - 'docs/**'
+      - '.github/**'
 
 jobs:
   build:
@@ -29,6 +29,7 @@ jobs:
         run: |
           pwd
           ls
+
 
       # Step to delete files
 
